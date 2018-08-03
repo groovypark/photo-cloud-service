@@ -3,7 +3,7 @@
     <div class="mdl-grid">
       <div class="mdl-cell mdl-cell--3-col mdl-cell mdl-cell--1-col-tablet mdl-cell--hide-phone"></div>
       <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone">
-        <div v-for="(picture, index) in this.pictures" :key="index" class="image-card" @click="displayDetails(picture.id)">
+        <div v-for="(picture, index) in this.$root.cat" :key="index" class="image-card" @click="displayDetails(picture['.key'])">
           <div class="image-card__picture">
             <img :src="picture.url" />
           </div>
