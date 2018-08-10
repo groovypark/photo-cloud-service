@@ -24,25 +24,27 @@
       navigator.mediaDevices.getUserMedia({ video: true })
         .then((mediaStream) => {
           this.mediaStream = mediaStream
+          this.$refs.video.srcObject = mediaStream
           this.$refs.video.play()
         })
         .catch(error => console.error('getUserMedia() error:', error))
+    },
+    destroyed () {
+      const tracks = this.mediaStream.getTracks()
+      tracks.map(track => track.stop())
     },
     methods: {
       capture () {
         const mediaStreamTrack = this.mediaStream.getVideoTracks()[0]
         const imageCapture = new window.ImageCapture(mediaStreamTrack)
         return imageCapture.takePhoto().then(blob => {
+          // fix: 에러남
           storage.ref().child(`images/picture-${new Date().getTime()}`).put(blob)
             .then(res => {
               this.postCat(res.metadata.downloadURLs[0], 'Hello')
               this.$router.go(-1)
             })
         })
-      },
-      destroyed () {
-        const tracks = this.mediaStream.getTracks()
-        tracks.map(track => track.stop())
       }
     }
   }
