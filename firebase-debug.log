@@ -1,0 +1,30 @@
+[debug] [2018-08-04T07:28:08.986Z] ----------------------------------------------------------------------
+[debug] [2018-08-04T07:28:08.990Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-08-04T07:28:08.991Z] CLI Version:   4.0.2
+[debug] [2018-08-04T07:28:08.991Z] Platform:      darwin
+[debug] [2018-08-04T07:28:08.991Z] Node Version:  v8.11.3
+[debug] [2018-08-04T07:28:08.992Z] Time:          Sat Aug 04 2018 16:28:08 GMT+0900 (KST)
+[debug] [2018-08-04T07:28:08.992Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-04T07:28:09.012Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-04T07:28:09.013Z] > authorizing via signed-in user
+[debug] [2018-08-04T07:28:09.015Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-08-04T07:28:09.015Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/_Yje_t7_LCfrrjzpStV6tRPZ6wG5WsbvgfpKlFKPkCc',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sat Aug 04 2018 16:28:09 GMT+0900 (KST)
+[debug] [2018-08-04T07:28:09.326Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-04T07:28:09.337Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/photo-cloud-service  
+  
+ Sat Aug 04 2018 16:28:09 GMT+0900 (KST)
+[debug] [2018-08-04T07:28:10.450Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-04T07:28:10.452Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/photo-cloud-service/tokens  
+  
+ Sat Aug 04 2018 16:28:10 GMT+0900 (KST)
+[debug] [2018-08-04T07:28:11.391Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-04T07:28:11.392Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/photo-cloud-service  
+  
+ Sat Aug 04 2018 16:28:11 GMT+0900 (KST)
