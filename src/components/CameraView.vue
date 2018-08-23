@@ -38,11 +38,9 @@
         const mediaStreamTrack = this.mediaStream.getVideoTracks()[0]
         const imageCapture = new window.ImageCapture(mediaStreamTrack)
         return imageCapture.takePhoto().then(blob => {
-          // fix: 에러남
-          storage.ref().child(`images/picture-${new Date().getTime()}`).put(blob)
+          storage.ref().child('images/picture' + new Date().getTime()).put(blob)
             .then(res => {
               this.postCat(res.metadata.downloadURLs[0], 'Hello')
-              this.$router.go(-1)
             })
         })
       }
