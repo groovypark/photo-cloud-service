@@ -10,7 +10,7 @@
 </template>
 
 <script>
-  import storage from '../services/firebase'
+  import { storage } from '../services/firebase'
   import postCat from '../mixins/postCat'
 
   export default {
@@ -37,12 +37,15 @@
       capture () {
         const mediaStreamTrack = this.mediaStream.getVideoTracks()[0]
         const imageCapture = new window.ImageCapture(mediaStreamTrack)
-        return imageCapture.takePhoto().then(blob => {
-          storage.ref().child('images/picture' + new Date().getTime()).put(blob)
-            .then(res => {
-              this.postCat(res.metadata.downloadURLs[0], 'Hello')
-            })
-        })
+        return imageCapture.takePhoto().then(
+          blob => storage.ref().child('images/picture' + new Date().getTime()).put(blob)
+        ).then(
+          res => storage.ref().child(res.metadata.fullPath).getDownloadURL()
+        ).then(
+          url => {
+            this.postCat(url, 'Hello')
+          }
+        )
       }
     }
   }

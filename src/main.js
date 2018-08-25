@@ -5,7 +5,7 @@ import Vuefire from 'vuefire'
 import VueResource from 'vue-resource'
 import App from './App'
 import router from './router'
-import firebase from './services/firebase'
+import * as firebase from './services/firebase'
 
 Vue.use(Vuefire)
 Vue.use(VueResource)
