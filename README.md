@@ -1,6 +1,15 @@
-# vue-pwa
+# photo-cloud-service
 
-> A Vue.js project
+> Vue.js, PWA project
+
+## Medium blog
+블로그를 보며 따라서 만들어 봤습니다.
+
+1. [A progressive Web application with Vue JS, Webpack & Material Design [Part 1]](https://blog.sicara.com/a-progressive-web-application-with-vue-js-webpack-material-design-part-1-c243e2e6e402)
+2. [A Progressive Web Application with Vue JS, Webpack & Material Design [Part 2]](https://medium.com/bam-tech/a-progressive-web-application-with-vue-js-webpack-material-design-part-2-a5f19e70e08b)
+3. [A Progressive Web Application with Vue JS, Webpack & Material Design [Part 3]](https://blog.sicara.com/a-progressive-web-application-with-vue-js-webpack-material-design-part-3-service-workers-offline-ed3184264fd1)
+4. [A Progressive Web Application with Vue JS, Webpack & Material Design [Part 4]](https://medium.com/theodo/a-progressive-web-application-with-vue-js-webpack-material-design-part-4-96c8c216810b)
+
 
 ## Build Setup
 
@@ -13,18 +22,4 @@ npm run dev
 
 # build for production with minification
 npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
