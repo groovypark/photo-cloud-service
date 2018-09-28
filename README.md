@@ -2,7 +2,7 @@
 
 > Vue.js, PWA project
 
-Demo [https://photo-cloud-service.firebaseio.com](https://photo-cloud-service.firebaseio.com)
+Demo [https://photo-cloud-service.firebaseapp.com/](https://photo-cloud-service.firebaseapp.com/#/)
 
 ## Medium blog
 블로그를 보며 따라서 만들어 봤습니다.
