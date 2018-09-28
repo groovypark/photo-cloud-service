@@ -2,7 +2,7 @@
 
 Demo [https://photo-cloud-service.firebaseio.com](https://photo-cloud-service.firebaseio.com)
 > Vue.js, PWA project
-https://github.com/groovypark/photo-cloud-service/edit/master/README.md
+
 ## Medium blog
 블로그를 보며 따라서 만들어 봤습니다.
 
